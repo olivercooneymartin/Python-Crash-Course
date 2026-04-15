@@ -1,0 +1,23 @@
+def display_message(subject):
+    print(f"\nI am learning about {subject.title()}")
+
+display_message("Python")
+
+def make_shirt(text, size = "L"):
+    print(f"\nYour custom shirt is size: {size.title()}")
+    print(f"\nThe text on your shirt is: {text.title()}")
+
+make_shirt("L", "I am a Data Male")
+
+make_shirt(text = "I love Attack of the Clones", size = "XL")
+
+
+make_shirt("I love Python!", size = "M")
+
+
+def describe_city(city, country = "America"):
+    print(f"\n{city.title()} is a city in {country.title()}.")
+
+describe_city("Madrid", country = "Spain")
+
+
