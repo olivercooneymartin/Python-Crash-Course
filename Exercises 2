@@ -1,0 +1,73 @@
+
+
+f_pizza = ["Pineapple", "Green Chile", "Pepperoni"]
+
+for pizza in f_pizza:
+    print(f"I like {pizza} Pizza.\n")
+
+print("I love pizza!")
+
+
+num_list = range(1, 11)
+
+for num in num_list:
+    print(num)
+
+print(min(num_list))
+print(max(num_list))
+print(sum(num_list))
+
+odd_nums = []
+
+for num in range(3, 30, 3):
+    print(num)
+
+odd_nums = [num for num in range(1, 11) if num % 2 != 0]
+
+print(odd_nums)
+
+
+cubes = []
+
+for num in range(1, 11): 
+    cubes.append(num**3)
+
+print(cubes)
+
+
+cubes = [num**3 for num in range(1, 11)]
+print(cubes)
+
+
+nums = [1, 2, 3, 4, 5, 6, 7]
+
+print(f"The first three items in the list are: {nums[-3:]}")
+
+
+names = ["Bob", "Joe", "Jack", "Charles"]
+
+names_copy = names[:]
+
+names.append("Rick")
+
+print("Here is the first list of names:")
+
+for name in names:
+    print(name)
+
+print("And here is the second list of names:")
+
+for name in names_copy:
+    print(name)
+
+
+foods = ("Burger", "Pizza", "Cake", "Cookies", "Fries")
+
+for food in foods:
+    print(food)
+
+foods = ("Donut", "Bread")
+
+print(foods)
+
+
