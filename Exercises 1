@@ -1,0 +1,70 @@
+friend_names = ["Logan", "Jake", "Max"]
+
+message = f"My best friend is named {friend_names[0]}"
+
+
+dinner_list = ["Bob", "Matt", "Jeff"]
+
+message_1 = f"Please come to dinner with me, {dinner_list[0]}!\n"
+
+message_2 = f"Please come to dinner with me, {dinner_list[1]}!\n"
+
+message_3 = f"Please come to dinner with me, {dinner_list[2]}!\n"
+
+
+
+dinner_list.remove("Jeff")
+
+dinner_list.append("Ben")
+
+second_message = f"Please come to dinner with me, {dinner_list[0]}, {dinner_list[1]}, {dinner_list[2]}\n"
+
+
+
+dinner_list.insert(0, "Jack")
+dinner_list.insert(3, "Brandon")
+dinner_list.append("Calvin")
+
+
+
+rejection_1 = dinner_list.pop(0)
+
+rejection_2 = dinner_list.pop(1)
+
+rejection_3 = dinner_list.pop(2)
+
+rejection_4 = dinner_list.pop(-1)
+
+
+
+
+dinner_list.remove("Bob")
+dinner_list.remove("Brandon")
+
+
+
+
+locations = ["Hong Kong", "Uraguay", "Hainan", "Brazil", "Andorra"]
+
+locations.sort()
+
+print(locations)
+
+locations.sort(reverse=True)
+
+print(locations)
+
+
+print(sorted(locations))
+
+locations.reverse()
+
+print(locations)
+
+nums = ["1", "2", "3", "4", "5"]
+
+print(len(nums))
+
+
+
+
