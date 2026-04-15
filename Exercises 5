@@ -1,0 +1,45 @@
+message = "Hello World"
+print(message)
+
+message = "New Message"
+print(message)
+
+
+name = "ada"
+print(name.lower())
+
+first_name = "Oliver"
+
+last_name = "Martin"
+
+full_name = f"{first_name} {last_name}"
+
+print(full_name)
+
+print("\tPython")
+print("Python\n")
+print("\n\tPython")
+
+new_name = " Python "
+print(new_name)
+
+new_name = new_name.strip()
+
+print(new_name)
+
+name = "eric smith"
+print(f"Hello {name.title()}\n")
+
+quote = "Enstien once said ... Ligma Balls\n -Enstien\t"
+
+print(quote)
+
+file = 'notes.txt'
+
+print(file.removesuffix('.txt'))
+
+print(5 + 3, 10 - 2, 2*4, 16/2) 
+
+fav_number = 3
+
+print(f"I guess my favorite number is {fav_number}")
