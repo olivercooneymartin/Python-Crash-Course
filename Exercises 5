@@ -30,7 +30,7 @@ print(new_name)
 name = "eric smith"
 print(f"Hello {name.title()}\n")
 
-quote = "Enstien once said ... Ligma Balls\n -Enstien\t"
+quote = "Enstien once said ...\n -Enstien\t"
 
 print(quote)
 
