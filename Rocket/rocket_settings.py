@@ -1,13 +1,20 @@
+# This file stores the settings for the Rocket Game.
+
 class Settings:
+    """A class to store game settings."""
 
     def __init__(self):
+        """Initialize the game's settings."""
 
+        # Screen settings.
         self.screen_width = 1200
         self.screen_height = 800
         self.bg_color = (135, 206, 250)
 
+        # Rocket settings.
         self.rocket_speed = 1.5
 
+        # Bullet settings.
         self.bullet_speed = 2.0
         self.bullet_width = 3
         self.bullet_height = 15
