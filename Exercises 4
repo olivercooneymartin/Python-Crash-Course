@@ -1,23 +1,39 @@
+# This program practices defining and calling functions,
+# using parameters, default values, and keyword arguments.
+
+# Define a function that prints a message about a subject.
 def display_message(subject):
+    # Print a message using the subject passed into the function.
     print(f"\nI am learning about {subject.title()}")
 
+
+# Call the function with "Python" as the subject.
 display_message("Python")
 
-def make_shirt(text, size = "L"):
+
+# Define a function to describe a custom shirt.
+def make_shirt(text, size="L"):
+    # Print the shirt size.
     print(f"\nYour custom shirt is size: {size.title()}")
+    # Print the text that will appear on the shirt.
     print(f"\nThe text on your shirt is: {text.title()}")
 
-make_shirt("L", "I am a Data Male")
 
-make_shirt(text = "I love Attack of the Clones", size = "XL")
+# Call the function using positional arguments.
+make_shirt("L", "I am a Data Engineer")
+
+# Call the function using keyword arguments.
+make_shirt(text="I love Attack of the Clones", size="XL")
+
+# Call the function with a mix of positional and keyword arguments.
+make_shirt("I love Python!", size="M")
 
 
-make_shirt("I love Python!", size = "M")
-
-
-def describe_city(city, country = "America"):
+# Define a function that describes a city and its country.
+def describe_city(city, country="America"):
+    # Print a sentence describing the city.
     print(f"\n{city.title()} is a city in {country.title()}.")
 
-describe_city("Madrid", country = "Spain")
 
-
+# Call the function with a specified country.
+describe_city("Madrid", country="Spain")
