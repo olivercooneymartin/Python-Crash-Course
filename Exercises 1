@@ -1,70 +1,74 @@
+# This program practices working with lists, including accessing, adding,
+# removing, sorting, reversing, and counting list items.
+
+# Store a few friend names in a list.
 friend_names = ["Logan", "Jake", "Max"]
 
+# Create a message using the first friend in the list.
 message = f"My best friend is named {friend_names[0]}"
 
 
+# Store the original dinner guest list.
 dinner_list = ["Bob", "Matt", "Jeff"]
 
+# Create individual dinner invitation messages.
 message_1 = f"Please come to dinner with me, {dinner_list[0]}!\n"
-
 message_2 = f"Please come to dinner with me, {dinner_list[1]}!\n"
-
 message_3 = f"Please come to dinner with me, {dinner_list[2]}!\n"
 
 
-
+# Remove Jeff from the dinner list because he can no longer attend.
 dinner_list.remove("Jeff")
 
+# Add Ben as a new dinner guest.
 dinner_list.append("Ben")
 
-second_message = f"Please come to dinner with me, {dinner_list[0]}, {dinner_list[1]}, {dinner_list[2]}\n"
+# Create a new invitation message for the updated guest list.
+second_message = (
+    f"Please come to dinner with me, "
+    f"{dinner_list[0]}, {dinner_list[1]}, {dinner_list[2]}\n"
+)
 
 
-
+# Add more guests to the dinner list.
 dinner_list.insert(0, "Jack")
 dinner_list.insert(3, "Brandon")
 dinner_list.append("Calvin")
 
 
-
+# Remove guests from the list using pop().
 rejection_1 = dinner_list.pop(0)
-
 rejection_2 = dinner_list.pop(1)
-
 rejection_3 = dinner_list.pop(2)
-
 rejection_4 = dinner_list.pop(-1)
 
 
-
-
+# Remove the final guests from the dinner list.
 dinner_list.remove("Bob")
 dinner_list.remove("Brandon")
 
 
-
-
+# Store a list of locations.
 locations = ["Hong Kong", "Uraguay", "Hainan", "Brazil", "Andorra"]
 
+# Sort the locations alphabetically.
 locations.sort()
-
 print(locations)
 
+# Sort the locations in reverse alphabetical order.
 locations.sort(reverse=True)
-
 print(locations)
 
-
+# Print a temporarily sorted version of the list.
 print(sorted(locations))
 
+# Reverse the current order of the list.
 locations.reverse()
-
 print(locations)
 
+
+# Store a list of numbers as strings.
 nums = ["1", "2", "3", "4", "5"]
 
+# Print how many items are in the nums list.
 print(len(nums))
-
-
-
-
