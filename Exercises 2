@@ -1,73 +1,97 @@
+# This program practices loops, ranges, list comprehensions, slices,
+# copying lists, and working with tuples.
 
+# Store a list of favorite pizzas.
+favorite_pizzas = ["Pineapple", "Green Chile", "Pepperoni"]
 
-f_pizza = ["Pineapple", "Green Chile", "Pepperoni"]
+# Print a sentence for each pizza in the list.
+for pizza in favorite_pizzas:
+    print(f"I like {pizza} pizza.\n")
 
-for pizza in f_pizza:
-    print(f"I like {pizza} Pizza.\n")
-
+# Print a final sentence about pizza.
 print("I love pizza!")
 
 
+# Create a range of numbers from 1 to 10.
 num_list = range(1, 11)
 
+# Print each number in the range.
 for num in num_list:
     print(num)
 
+# Print the smallest number, largest number, and total sum.
 print(min(num_list))
 print(max(num_list))
 print(sum(num_list))
 
-odd_nums = []
 
+# Print numbers from 3 to 27, counting by 3.
 for num in range(3, 30, 3):
     print(num)
 
+# Create a list of odd numbers from 1 to 10.
 odd_nums = [num for num in range(1, 11) if num % 2 != 0]
 
+# Print the list of odd numbers.
 print(odd_nums)
 
 
+# Create an empty list for cubes.
 cubes = []
 
-for num in range(1, 11): 
+# Add the cube of each number from 1 to 10.
+for num in range(1, 11):
     cubes.append(num**3)
 
+# Print the list of cubes.
 print(cubes)
 
 
+# Create the same list of cubes using a list comprehension.
 cubes = [num**3 for num in range(1, 11)]
+
+# Print the list of cubes.
 print(cubes)
 
 
+# Store a list of numbers.
 nums = [1, 2, 3, 4, 5, 6, 7]
 
-print(f"The first three items in the list are: {nums[-3:]}")
+# Print the last three items in the list.
+print(f"The last three items in the list are: {nums[-3:]}")
 
 
+# Store a list of names.
 names = ["Bob", "Joe", "Jack", "Charles"]
 
+# Make a copy of the names list.
 names_copy = names[:]
 
+# Add a new name to the original list.
 names.append("Rick")
 
+# Print the original list of names.
 print("Here is the first list of names:")
 
 for name in names:
     print(name)
 
+# Print the copied list of names.
 print("And here is the second list of names:")
 
 for name in names_copy:
     print(name)
 
 
+# Store a tuple of foods.
 foods = ("Burger", "Pizza", "Cake", "Cookies", "Fries")
 
+# Print each food in the tuple.
 for food in foods:
     print(food)
 
+# Reassign the foods variable to a new tuple.
 foods = ("Donut", "Bread")
 
+# Print the new tuple.
 print(foods)
-
-
