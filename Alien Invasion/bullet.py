@@ -1,26 +1,39 @@
+# This file contains the Bullet class used by the Alien Invasion game.
+
 import pygame
 from pygame.sprite import Sprite
 
+
 class Bullet(Sprite):
+    """A class to represent a bullet fired by the ship."""
+
     def __init__(self, ai_game):
+        """Create a bullet at the ship's current position."""
         super().__init__()
 
+        # Store screen and settings.
         self.screen = ai_game.screen
         self.settings = ai_game.settings
         self.color = self.settings.bullet_color
-        
-        self.rect = pygame.Rect(0, 0, self.settings.bullet_width,
-            self.settings.bullet_height)
+
+        # Create a bullet rect at (0, 0) and then set position.
+        self.rect = pygame.Rect(
+            0, 0,
+            self.settings.bullet_width,
+            self.settings.bullet_height
+        )
+
+        # Start bullet at the ship's position.
         self.rect.midtop = ai_game.ship.rect.midtop
 
+        # Store bullet's position as a float.
         self.y = float(self.rect.y)
 
-
     def update(self):
+        """Move the bullet up the screen."""
         self.y -= self.settings.bullet_speed
-        self.rect.y = self.y 
-
+        self.rect.y = self.y
 
     def draw_bullet(self):
+        """Draw the bullet to the screen."""
         pygame.draw.rect(self.screen, self.color, self.rect)
-
