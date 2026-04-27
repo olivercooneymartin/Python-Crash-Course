@@ -1,34 +1,51 @@
+# This program practices conditional statements, comparisons,
+# logical operators, and checking for values in lists.
+
+# Store some values.
 val_1 = 5
 val_2 = 10
 val_3 = 15
 
+# Store a simple list.
 list_1 = [1, 2, 3]
 
+# Check if val_1 is equal to 5.
 if val_1 == 5:
     print(val_2)
 
+# Check if both conditions are true.
 if val_1 and val_2 <= 30:
     print("Passed")
 
+# Check if at least one condition is true.
 if val_1 or val_2 > 3:
     print("Correct")
 
+# Check if val_1 is not in the list.
 if val_1 not in list_1:
     print("I couldn't find it.")
 
+
+# Create a list of alien colors (not used after reassignment).
 alien_color = ["green", "red", "yellow"]
 
+# Assign a single color to the variable.
 alien_color = "red"
 
+# Check the alien color and print points.
 if alien_color == "green":
     print("5 Points")
-
-else: 
+else:
     print("You just got 10 points!")
 
+
+# Reset the alien color variable.
 alien_color = ["green", "red", "yellow"]
+
+# Assign a new color.
 alien_color = "blue"
 
+# Check multiple possible colors.
 if alien_color == "green":
     print("You earned 5 points!")
 
@@ -42,9 +59,10 @@ else:
     print("That wasn't one of the options!")
 
 
-
+# Store an age value.
 age = 17
 
+# Determine the life stage based on age.
 if age < 2:
     print("You are a baby")
 
@@ -64,21 +82,19 @@ elif age >= 65:
     print("Elderly")
 
 
+# Store a list of fruits.
 fruits = ["Apple", "Banana", "Grape"]
 
+# Check if specific fruits are in the list.
 if "Apple" in fruits:
     print("This is an Apple")
 
 if "Banana" in fruits:
     print("BANAN")
 
+# This condition checks a string literal, not the list.
 if "Grape in fruits":
     print("one grape")
 
 else:
     print("I only know about three fruits!")
-
-
-
-
-
