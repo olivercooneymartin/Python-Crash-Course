@@ -1,45 +1,67 @@
+# This program practices working with strings, variables, formatting,
+# whitespace, and simple math operations.
+
+# Store and print a message.
 message = "Hello World"
 print(message)
 
+# Change the value of the message and print it again.
 message = "New Message"
 print(message)
 
 
+# Store a name and print it in lowercase.
 name = "ada"
 print(name.lower())
 
-first_name = "Oliver"
 
+# Store first and last names.
+first_name = "Oliver"
 last_name = "Martin"
 
+# Combine first and last names into a full name.
 full_name = f"{first_name} {last_name}"
 
+# Print the full name.
 print(full_name)
 
-print("\tPython")
-print("Python\n")
-print("\n\tPython")
 
+# Print examples of tabs and new lines.
+print("\tPython")      # Tab before the word
+print("Python\n")      # New line after the word
+print("\n\tPython")    # New line, then tab
+
+
+# Store a name with extra whitespace.
 new_name = " Python "
 print(new_name)
 
+# Remove leading and trailing whitespace.
 new_name = new_name.strip()
-
 print(new_name)
 
+
+# Print a formatted greeting.
 name = "eric smith"
 print(f"Hello {name.title()}\n")
 
-quote = "Enstien once said ...\n -Enstien\t"
 
+# Store and print a quote.
+quote = "Enstien once said ...\n -Enstien\t"
 print(quote)
 
-file = 'notes.txt'
 
-print(file.removesuffix('.txt'))
+# Store a filename.
+file = "notes.txt"
 
-print(5 + 3, 10 - 2, 2*4, 16/2) 
+# Remove the .txt suffix and print the result.
+print(file.removesuffix(".txt"))
 
+
+# Perform and print basic math operations.
+print(5 + 3, 10 - 2, 2 * 4, 16 / 2)
+
+
+# Store a favorite number and print it in a sentence.
 fav_number = 3
-
 print(f"I guess my favorite number is {fav_number}")
